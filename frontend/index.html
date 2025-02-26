@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>理賠預測系統</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <h1>理賠預測系統</h1>
+
+    <label>車輛類別異常 (0 或 1): <input type="number" id="category_anomaly"></label><br>
+    <label>廠牌 (Ford/Dacia): <input type="text" id="Maker"></label><br>
+    <label>車型: <input type="text" id="Model"></label><br>
+    <label>座位數 (2-20): <input type="number" id="Seat_num"></label><br>
+    <label>車門數 (2-7): <input type="number" id="Door_num"></label><br>
+    <label>維修費用: <input type="number" id="repair_cost"></label><br>
+    <label>維修時間: <input type="number" id="repair_hours"></label><br>
+    <label>維修複雜度 (1-4): <input type="number" id="repair_complexity"></label><br>
+
+    <button id="predictButton">預測</button>
+    <p id="result"></p>
+    <p id="error"></p>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
